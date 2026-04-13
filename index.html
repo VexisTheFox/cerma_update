@@ -12,6 +12,22 @@
 </head>
 <body>
 
+<!-- Cookies banner -->
+<div id="cookie-banner" style="display: flex;"> <!-- Start hidden -->
+    <div class="cookie-text">
+        <p class="cookie-h1">Informace o cookies</p>
+        <p class="cookie-p">
+            Když kliknete na „Přijmout všechny soubory cookie“, poskytnete tím souhlas k jejich ukládání na vašem zařízení,
+            což pomáhá s navigací na stránce, s analýzou využití dat a s našimi marketingovými snahami. Váš souhlas můžete
+            kdykoliv odvolat v Nastavení cookies. Další informace naleznete v sekci 
+            <a href="https://cermat.cz/zpracovani-osobnich-udaju" target="_blank">Informace o zpracování údajů na webu</a>.
+        </p>
+    </div>
+    <div class="cookie-btn">
+        <button onclick="acceptAllCookies()" class="prim">Přijmout všechny soubory cookies</button>
+        <button onclick="showCookieSettings()" class="sec">Nastavení cookies</button>
+    </div>
+</div>
 
 <div id="modal-backdrop" style="display: none;"></div>
 
