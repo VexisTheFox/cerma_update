@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<!-- saved from url=(0031)https://tau.cermat.cz/index.php -->
-<html lang="cs"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trénuj a uč se! | C+++AT</title>
-    <link rel="stylesheet" href="./gooning_files/style_tau.css">
-    <link rel="stylesheet" href="./gooning_files/style-cookies.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://tau.cermat.cz/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://tau.cermat.cz/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://tau.cermat.cz/favicon/favicon-16x16.png">
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Trénuj a uč se! | C+++AT</title>
+
+<!-- Base fixes ALL relative paths -->
+<base href="https://tau.cermat.cz/">
+
+<link rel="stylesheet" href="gooning_files/style_tau.css">
+<link rel="stylesheet" href="gooning_files/style-cookies.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 </head>
+
 <body>
 
 <!-- Cookies banner -->
-<div id="cookie-banner" style="display: flex;"> <!-- Start hidden -->
+<div id="cookie-banner" style="display: flex;">
     <div class="cookie-text">
         <p class="cookie-h1">Informace o cookies</p>
         <p class="cookie-p">
-            Když kliknete na „Přijmout všechny soubory cookie“, poskytnete tím souhlas k jejich ukládání na vašem zařízení,
-            což pomáhá s navigací na stránce, s analýzou využití dat a s našimi marketingovými snahami. Váš souhlas můžete
-            kdykoliv odvolat v Nastavení cookies. Další informace naleznete v sekci 
+            Když kliknete na „Přijmout všechny soubory cookie“, poskytnete tím souhlas...
             <a href="https://cermat.cz/zpracovani-osobnich-udaju" target="_blank">Informace o zpracování údajů na webu</a>.
         </p>
     </div>
@@ -40,92 +45,25 @@
             <line x1="30" y1="10" x2="10" y2="30" stroke="black" stroke-width="1"></line>
         </svg>
     </div>
-    <div class="cookie-obsah">
-        <p class="cookie-nadpisy">Používáme následující soubory cookies:</p>
-        <p>Při návštěvě jakékoli webové stránky je pravděpodobné, že stránka získá nebo uloží informace na vašem prohlížeči, a to většinou ve formě souborů cookie. Můžou to být informace týkající se vás, vašich preferencí a zařízení, které používáte. Většinou to slouží k vylepšování stránky, aby fungovala podle vašich očekávání. Informace vás zpravidla neidentifikují jako jednotlivce, ale celkově mohou pomoci přizpůsobovat prostředí vašim potřebám. Respektujeme vaše právo na soukromí, a proto se můžete rozhodnout, že některé soubory cookie nebudete akceptovat. Když kliknete na různé tituly, dozvíte se více a budete moci nastavení změnit. Nezapomínejte ale na to, že zablokováním některých souborů cookie můžete ovlivnit, jak stránka funguje a jaké služby jsou vám nabízeny.</p>
-        <div class="cookie-set"> 
-            <div class="cookie-category">
-                <div class="cookie-vyber">
-                    <p class="cookie-nadpisy">Funkční cookies:</p>
-                    <label class="switch">
-                        <input type="checkbox" id="functional-cookies" checked="" disabled="">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-                <p class="cookie-description">  Tyto cookies jsou nezbytné k tomu, aby Webové stránky fungovaly, takže není možné je vypnout. Většinou jsou nastavené jako odezva na akci, kterou na Webových stránkách sami provedete, jako je např. bezpečnostní nastavení, přihlašování, vyplňování formulářů. Prohlížeč můžete nastavit tak, aby blokoval soubory cookies nebo o nich posílal upozornění. Mějte na paměti, že některé stránky bez těchto souborů nebudou fungovat. Tyto soubory cookies neukládají žádné informace přiřaditelné ke konkrétní osobě. Tyto cookies můžeme nastavovat my nebo poskytovatelé třetí strany, jejichž služby na stránkách používáme. Tyto soubory cookies neukládají žádné informace přiřaditelné ke konkrétní osobě.  </p>
-            </div>
-            <div class="cookie-category">
-                <div class="cookie-vyber">
-                    <p class="cookie-nadpisy">Základní analytické cookies:</p>
-                    <label class="switch">
-                        <input type="checkbox" id="analytics-cookies" checked="">
-                        <span class="slider round" style="cursor: pointer"></span>
-                    </label>
-                </div>
-                <p class="cookie-description">  Tyto cookies slouží ke zlepšení fungování Webových stránek. Umožňují nám rozpoznat a zjistit počet návštěvníků a sledovat, jak návštěvníci používají Webové stránky. Pomáhají nám zlepšovat způsob, jakým Webové stránky fungují, například tak, že umožňují uživatelům snadno najít to, co hledají. Tyto cookies neshromažďují informace, které by dokázaly identifikovat Vaši osobu. Pomocí těchto nástrojů analyzujeme a pravidelně zlepšujeme funkcionalitu našich Webových stránek. Získané statistiky můžeme použít ke zlepšení uživatelského komfortu a abychom učinili Vaši návštěvu Webových stránek zajímavější pro Vás jako uživatele. </p>
-            </div>
-        </div>
-    </div>
-    <div class="cookie-footer">
-        <button onclick="acceptAllCookies()" class="prim">Povolit vše</button>
-        <button onclick="saveCookieSettings()" class="sec">Uložit nastavení</button>
-    </div>
 </div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    // Přidáme malé zpoždění pro kontrolu cookies
     setTimeout(() => {
         const cookiesConsent = localStorage.getItem("cookiesConsent");
-        
-        // Zkontrolujeme, zda je souhlas platný
-        if (!cookiesConsent || 
-            cookiesConsent === "false" || 
-            cookiesConsent === "[]" || 
-            cookiesConsent === "null") {
+        if (!cookiesConsent || cookiesConsent === "false") {
             document.getElementById("cookie-banner").style.display = "flex";
         }
-    }, 100); // 100ms zpoždění by mělo stačit
+    }, 100);
 });
-
-document.querySelectorAll('.cookie-vyber').forEach(function(vyber) {
-    vyber.addEventListener('click', function(event) {
-        // Ignoruj kliknutí přímo na input (checkbox) nebo span (slider)
-        if (event.target.tagName.toLowerCase() !== 'input' && event.target.tagName.toLowerCase() !== 'span') {
-            const description = this.nextElementSibling;
-            // Zobrazit nebo skrýt popis
-            if (description.style.display === 'none' || description.style.display === '') {
-                description.style.display = 'block'; // Zobrazit popis
-            } else {
-                description.style.display = 'none'; // Skrýt popis
-            }
-        }
-    });
-});
-
-function acceptAllCookies() {
-    localStorage.setItem("cookiesConsent", "true"); // Uložení souhlasu
-    setCookie("cookiesConsent", JSON.stringify(["functional", "analytics"]), 365); // Uložení souhlasu do cookie
-
-    let userId = getCookie('user_id');
-    if (!userId) {
-        do {
-            userId = generateUniqueId();
-        } while (userIdExists(userId));  // Kontrola, zda ID již neexistuje
-
-        setCookie('user_id', userId, 365); // Uložit do cookie na 365 dní
-    } else {
-    }
-
-    hideCookieBanner();
-    hideCookieSettings(); // Skrýt modální okno pro nastavení, pokud je otevřené
-}
 
 function userIdExists(userId) {
     let exists = false;
-    // Sestavit a odeslat AJAX požadavek na kontrolu v databázi
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "check_user_id.php", false); // False pro synchronní požadavek
+
+    // ✅ FIXED: absolute URL
+    xhr.open("POST", "https://tau.cermat.cz/check_user_id.php", false);
+
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
@@ -136,6 +74,21 @@ function userIdExists(userId) {
     return exists;
 }
 
+function acceptAllCookies() {
+    localStorage.setItem("cookiesConsent", "true");
+
+    let userId = getCookie('user_id');
+    if (!userId) {
+        do {
+            userId = generateUniqueId();
+        } while (userIdExists(userId));
+
+        setCookie('user_id', userId, 365);
+    }
+
+    hideCookieBanner();
+}
+
 function generateUniqueId() {
     return 'user_' + Math.random().toString(36).substr(2, 9);
 }
@@ -143,201 +96,52 @@ function generateUniqueId() {
 function setCookie(name, value, days) {
     const date = new Date();
     date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    const expires = "; expires=" + date.toUTCString();
-    document.cookie = name + "=" + value + expires + "; path=/";
+    document.cookie = name + "=" + value + "; expires=" + date.toUTCString() + "; path=/";
 }
 
 function getCookie(name) {
     const nameEQ = name + "=";
     const ca = document.cookie.split(';');
     for (let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        let c = ca[i].trim();
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length);
     }
     return null;
 }
 
 function hideCookieBanner() {
-    document.getElementById("cookie-banner").style.display = "none"; // Skrýt banner
+    document.getElementById("cookie-banner").style.display = "none";
 }
 
 function showCookieSettings() {
     document.getElementById("modal-backdrop").style.display = "block";
     document.getElementById("cookie-settings").style.display = "block";
-
-    // Skrýt cookies banner, pokud se zobrazují nastavení
-    hideCookieBanner();
-}
-
-function saveCookieSettings() {
-    let consent = ["functional"];  // Vždy zahrnout funkční cookies
-
-    if (document.getElementById("analytics-cookies").checked) {
-        consent.push("analytics");
-        initGoogleAnalytics(); // Inicializace Google Analytics
-    } else {
-        // Zobrazit modal s informací "nefunguje"
-    }
-
-    localStorage.setItem("cookiesConsent", JSON.stringify(consent)); // Uložení jako JSON řetězec
-    setCookie("cookiesConsent", JSON.stringify(consent), 365); // Uložení souhlasu do cookie
-
-    // Generování user_id i když jsou analytické cookies vypnuté
-    let userId = getCookie('user_id');
-    if (!userId) {
-        do {
-            userId = generateUniqueId();
-        } while (userIdExists(userId));  // Kontrola, zda ID již neexistuje
-
-        setCookie('user_id', userId, 365); // Uložit do cookie na 365 dní
-    } else {
-    }
-
-    hideCookieSettings();
-    hideCookieBanner(); // Skrýt banner i nastavení po uložení
-}
-
-function initGoogleAnalytics() {
-    // Zde vložte kód pro Google Analytics
-    // Příklad: (nahraďte 'YOUR_TRACKING_ID' svým ID sledování)
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'YOUR_TRACKING_ID');
 }
 
 function hideCookieSettings() {
     document.getElementById("modal-backdrop").style.display = "none";
     document.getElementById("cookie-settings").style.display = "none";
-
-    // Zobrazit banner znovu, pokud analytické cookies nejsou povoleny
-    const cookiesConsent = localStorage.getItem("cookiesConsent");
-    const consentArray = cookiesConsent ? JSON.parse(cookiesConsent) : [];
-
-    // Zkontrolovat, zda nejsou povoleny analytické cookies
-    if (!consentArray.includes("analytics")) {
-        document.getElementById("cookie-banner").style.display = "flex"; // Zobrazit banner
-    }
 }
 </script>
 
 <div class="uvodni_lista">
-<img src="./gooning_files/Pornhub-logo.svg" alt="Logo CERMAT" class="logo_cermat">
-<img src="./gooning_files/logo_cermat_male.png" alt="Logo CERMAT" class="logo_cermat_male">
-  <div class="flex_doprava">
-    <svg xmlns="http://www.w3.org/2000/svg" id="yt-ringo2-svg_yt42" width="93" height="20" viewBox="0 0 93 20" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
-  <g>
-    <path d="M14.4848 20C14.4848 20 23.5695 20 25.8229 19.4C27.0917 19.06 28.0459 18.08 28.3808 16.87C29 14.65 29 9.98 29 9.98C29 9.98 29 5.34 28.3808 3.14C28.0459 1.9 27.0917 0.94 25.8229 0.61C23.5695 0 14.4848 0 14.4848 0C14.4848 0 5.42037 0 3.17711 0.61C1.9286 0.94 0.954148 1.9 0.59888 3.14C0 5.34 0 9.98 0 9.98C0 9.98 0 14.65 0.59888 16.87C0.954148 18.08 1.9286 19.06 3.17711 19.4C5.42037 20 14.4848 20 14.4848 20Z" fill="#FF0033"></path>
-    <path d="M19 10L11.5 5.75V14.25L19 10Z" fill="white"></path>
-  </g>
-  <g id="youtube-paths_yt42">
-    <path d="M37.1384 18.8999V13.4399L40.6084 2.09994H38.0184L36.6984 7.24994C36.3984 8.42994 36.1284 9.65994 35.9284 10.7999H35.7684C35.6584 9.79994 35.3384 8.48994 35.0184 7.22994L33.7384 2.09994H31.1484L34.5684 13.4399V18.8999H37.1384Z"></path>
-    <path d="M44.1003 6.29994C41.0703 6.29994 40.0303 8.04994 40.0303 11.8199V13.6099C40.0303 16.9899 40.6803 19.1099 44.0403 19.1099C47.3503 19.1099 48.0603 17.0899 48.0603 13.6099V11.8199C48.0603 8.44994 47.3803 6.29994 44.1003 6.29994ZM45.3903 14.7199C45.3903 16.3599 45.1003 17.3899 44.0503 17.3899C43.0203 17.3899 42.7303 16.3499 42.7303 14.7199V10.6799C42.7303 9.27994 42.9303 8.02994 44.0503 8.02994C45.2303 8.02994 45.3903 9.34994 45.3903 10.6799V14.7199Z"></path>
-    <path d="M52.2713 19.0899C53.7313 19.0899 54.6413 18.4799 55.3913 17.3799H55.5013L55.6113 18.8999H57.6012V6.53994H54.9613V16.4699C54.6812 16.9599 54.0312 17.3199 53.4212 17.3199C52.6512 17.3199 52.4113 16.7099 52.4113 15.6899V6.53994H49.7812V15.8099C49.7812 17.8199 50.3613 19.0899 52.2713 19.0899Z"></path>
-    <path d="M62.8261 18.8999V4.14994H65.8661V2.09994H57.1761V4.14994H60.2161V18.8999H62.8261Z"></path>
-    <path d="M67.8728 19.0899C69.3328 19.0899 70.2428 18.4799 70.9928 17.3799H71.1028L71.2128 18.8999H73.2028V6.53994H70.5628V16.4699C70.2828 16.9599 69.6328 17.3199 69.0228 17.3199C68.2528 17.3199 68.0128 16.7099 68.0128 15.6899V6.53994H65.3828V15.8099C65.3828 17.8199 65.9628 19.0899 67.8728 19.0899Z"></path>
-    <path d="M80.6744 6.26994C79.3944 6.26994 78.4744 6.82994 77.8644 7.73994H77.7344C77.8144 6.53994 77.8744 5.51994 77.8744 4.70994V1.43994H75.3244L75.3144 12.1799L75.3244 18.8999H77.5444L77.7344 17.6999H77.8044C78.3944 18.5099 79.3044 19.0199 80.5144 19.0199C82.5244 19.0199 83.3844 17.2899 83.3844 13.6099V11.6999C83.3844 8.25994 82.9944 6.26994 80.6744 6.26994ZM80.7644 13.6099C80.7644 15.9099 80.4244 17.2799 79.3544 17.2799C78.8544 17.2799 78.1644 17.0399 77.8544 16.5899V9.23994C78.1244 8.53994 78.7244 8.02994 79.3944 8.02994C80.4744 8.02994 80.7644 9.33994 80.7644 11.7299V13.6099Z"></path>
-    <path d="M92.6517 11.4999C92.6517 8.51994 92.3517 6.30994 88.9217 6.30994C85.6917 6.30994 84.9717 8.45994 84.9717 11.6199V13.7899C84.9717 16.8699 85.6317 19.1099 88.8417 19.1099C91.3817 19.1099 92.6917 17.8399 92.5417 15.3799L90.2917 15.2599C90.2617 16.7799 89.9117 17.3999 88.9017 17.3999C87.6317 17.3999 87.5717 16.1899 87.5717 14.3899V13.5499H92.6517V11.4999ZM88.8617 7.96994C90.0817 7.96994 90.1717 9.11994 90.1717 11.0699V12.0799H87.5717V11.0699C87.5717 9.13994 87.6517 7.96994 88.8617 7.96994Z"></path>
-  </g>
-</svg>
-
-    <p class="trenuj">TRÉNUJ A UČ SE</p>
+<img src="gooning_files/Pornhub-logo.svg" class="logo_cermat">
+<img src="gooning_files/logo_cermat_male.png" class="logo_cermat_male">
+<p class="trenuj">TRÉNUJ A UČ SE</p>
 </div>
-</div>
-
 
 <h1>VÍTEJTE V PORNOGRAFICKÉ APLIKACI TRÉNUJ A UČ SE</h1>
 
-<div class="info-lista"></div>
-
-<img src="./gooning_files/kanka-01.svg" alt="kanka" class="kanka_pozadi_index kanka01">
-<img src="./gooning_files/kanka-01.svg" alt="kanka" class="kanka_pozadi_index kanka02">
-
 <div class="center">
-
 <div class="container_index">
-<div class="levy">
-      <p class="text_uvod">
-        Aplikace je určena k gooningu nad testy a úlohami zadaných v rámci přijímací zkoušky či maturitní zkoušky.
-      </p>
-      <p class="text_vyber">
-        Vyberte typ zkoušky k procvičování.
-      </p>
-      <div class="vyber_container"> 
-      <a href="https://tau.cermat.cz/predmet_prijimacky.php" class="odkaz vyber_pr">GOONĚNÍ</a>
-      <div class="vyber_deak" title="Testy z maturitní zkoušky připravujeme...">FEMBOY FINAL BOSS</div>
-  </div>
+<p class="text_uvod">
+Aplikace je určena k gooningu nad testy a úlohami zadaných v rámci přijímací zkoušky či maturitní zkoušky.
+</p>
 
+<a href="predmet_prijimacky.php" class="odkaz vyber_pr">GOONĚNÍ</a>
 
-</div>
-
-
-
-
-
-      <div class="pravy">
-      <div class="text_fajvka_container">
-    <img src="./gooning_files/fajvka_cara.png" alt="cara" class="fajvka_cara">  
-   <p class="text_fajvka">Můžete GOONIT celý test nebo jen nad vybranou skupinu úloh.</p>
-      </div>
-
-      <div class="text_fajvka_container">
-      <img src="./gooning_files/fajvka_cara.png" alt="cara" class="fajvka_cara">  
-          <p class="text_fajvka">Výsledky jsou vyhodnoceny online.</p>
-      </div>
-
-      <div class="text_fajvka_container">
-      <img src="./gooning_files/fajvka_cara.png" alt="cara" class="fajvka_cara">  
-          <p class="text_fajvka">V případě špatné metodě v goonění můžete chybu opravit.</p>
-      </div>
-      </div>
-
-      </div>
-      </div>
-
-
-<div class="grid-container-mobile">
-    
-      <p class="text_uvod">
-      Aplikace je určena k procvičování testů a úloh zadaných v rámci přijímací zkoušky či maturitní zkoušky.
-      </p>
-
-<div class="flex_fajvka">
-
-<div class="text_fajvka_container">
-<svg xmlns="http://www.w3.org/2000/svg" width="51" height="37" viewBox="0 0 51 37" fill="none" class="fajvka2"><g clip-path="url(#clip0_304_98)"><path d="M0 16.2601C2.98902 14.6281 5.61746 12.796 8.76464 13.6946C10.4062 14.1613 12.0541 15.3075 13.2181 16.5871C15.0906 18.6478 16.5772 21.0673 18.1998 23.3534C18.7217 24.09 19.1519 24.887 19.7181 25.8109C20.047 25.4648 20.3222 25.2235 20.5404 24.9378C27.3535 16.1299 35.2705 8.43969 44.0161 1.59407C46.6794 -0.488822 48.8175 -0.526924 50.9968 1.47342C49.3964 2.95939 47.7801 4.42631 46.2017 5.92815C39.3254 12.4658 32.9299 19.4257 27.6666 27.3668C26.7114 28.8051 25.927 30.3609 24.956 31.7834C24.4752 32.4883 23.8331 33.1773 23.1025 33.5932C20.9769 34.8061 18.7723 35.8793 16.6152 37.0001C13.9899 31.4976 11.1274 26.1221 7.45832 21.226C5.64909 18.8129 3.45082 16.9396 0.00316299 16.2633L0 16.2601Z" fill="#0769B8"></path></g><defs><clippath id="clip0_304_98"><rect width="51" height="37" fill="white"></rect></clippath></defs></svg>
-<p class="text_fajvka">Můžete řešit celý test nebo jen vybranou skupinu úloh.</p>
-</div>
-
-<div class="text_fajvka_container">
-<svg xmlns="http://www.w3.org/2000/svg" width="51" height="37" viewBox="0 0 51 37" fill="none" class="fajvka2"><g clip-path="url(#clip0_304_98)"><path d="M0 16.2601C2.98902 14.6281 5.61746 12.796 8.76464 13.6946C10.4062 14.1613 12.0541 15.3075 13.2181 16.5871C15.0906 18.6478 16.5772 21.0673 18.1998 23.3534C18.7217 24.09 19.1519 24.887 19.7181 25.8109C20.047 25.4648 20.3222 25.2235 20.5404 24.9378C27.3535 16.1299 35.2705 8.43969 44.0161 1.59407C46.6794 -0.488822 48.8175 -0.526924 50.9968 1.47342C49.3964 2.95939 47.7801 4.42631 46.2017 5.92815C39.3254 12.4658 32.9299 19.4257 27.6666 27.3668C26.7114 28.8051 25.927 30.3609 24.956 31.7834C24.4752 32.4883 23.8331 33.1773 23.1025 33.5932C20.9769 34.8061 18.7723 35.8793 16.6152 37.0001C13.9899 31.4976 11.1274 26.1221 7.45832 21.226C5.64909 18.8129 3.45082 16.9396 0.00316299 16.2633L0 16.2601Z" fill="#0769B8"></path></g><defs><clippath id="clip0_304_98"><rect width="51" height="37" fill="white"></rect></clippath></defs></svg>
-  <p class="text_fajvka">Výsledky jsou vyhodnoceny online.</p>
-</div>
-
-<div class="text_fajvka_container">
-<svg xmlns="http://www.w3.org/2000/svg" width="51" height="37" viewBox="0 0 51 37" fill="none" class="fajvka2"><g clip-path="url(#clip0_304_98)"><path d="M0 16.2601C2.98902 14.6281 5.61746 12.796 8.76464 13.6946C10.4062 14.1613 12.0541 15.3075 13.2181 16.5871C15.0906 18.6478 16.5772 21.0673 18.1998 23.3534C18.7217 24.09 19.1519 24.887 19.7181 25.8109C20.047 25.4648 20.3222 25.2235 20.5404 24.9378C27.3535 16.1299 35.2705 8.43969 44.0161 1.59407C46.6794 -0.488822 48.8175 -0.526924 50.9968 1.47342C49.3964 2.95939 47.7801 4.42631 46.2017 5.92815C39.3254 12.4658 32.9299 19.4257 27.6666 27.3668C26.7114 28.8051 25.927 30.3609 24.956 31.7834C24.4752 32.4883 23.8331 33.1773 23.1025 33.5932C20.9769 34.8061 18.7723 35.8793 16.6152 37.0001C13.9899 31.4976 11.1274 26.1221 7.45832 21.226C5.64909 18.8129 3.45082 16.9396 0.00316299 16.2633L0 16.2601Z" fill="#0769B8"></path></g><defs><clippath id="clip0_304_98"><rect width="51" height="37" fill="white"></rect></clippath></defs></svg>
-  <p class="text_fajvka">V případě špatné odpovědi můžete chybu opravit.</p>
 </div>
 </div>
 
-<div class="vyber_container"> 
-      <a href="https://tau.cermat.cz/predmet_prijimacky.php" class="odkaz vyber_pr">
-      PŘIJÍMAČKY
-    </a>
-      <div class="vyber_deak" title="Testy z maturitní zkoušky připravujeme...">
-      MATURITA V PŘÍPRAVĚ
-    </div>
-  </div>
-
-</div>
-<p class="prani_dole">Hodně štěstí!</p>
-
-<p class="podpora">uživatelská podpora: <span class="email">vexi@vexi123.cn</span></p>
-
-
-
-
-
-
-</body></html>
+</body>
+</html>
