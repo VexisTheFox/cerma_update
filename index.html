@@ -6,25 +6,22 @@
 
 <title>Trénuj a uč se! | C+++AT</title>
 
-<!-- Base fixes ALL relative paths -->
-<base href="https://tau.cermat.cz/">
+<link rel="stylesheet" href="https://tau.cermat.cz/style_tau.css">
+<link rel="stylesheet" href="https://tau.cermat.cz/style-cookies.css">
 
-<link rel="stylesheet" href="gooning_files/style_tau.css">
-<link rel="stylesheet" href="gooning_files/style-cookies.css">
-
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://tau.cermat.cz/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tau.cermat.cz/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tau.cermat.cz/favicon/favicon-16x16.png">
 </head>
 
 <body>
 
-<!-- Cookies banner -->
 <div id="cookie-banner" style="display: flex;">
     <div class="cookie-text">
         <p class="cookie-h1">Informace o cookies</p>
         <p class="cookie-p">
-            Když kliknete na „Přijmout všechny soubory cookie“, poskytnete tím souhlas...
+            Když kliknete na „Přijmout všechny soubory cookie“, poskytnete tím souhlas k jejich ukládání na vašem zařízení,
+            což pomáhá s navigací na stránce, s analýzou využití dat a s našimi marketingovými snahami.
             <a href="https://cermat.cz/zpracovani-osobnich-udaju" target="_blank">Informace o zpracování údajů na webu</a>.
         </p>
     </div>
@@ -34,34 +31,12 @@
     </div>
 </div>
 
-<div id="modal-backdrop" style="display: none;"></div>
-
-<!-- Cookies settings modal -->
-<div id="cookie-settings" style="display: none;">
-    <div class="set-header">
-        <p class="cookie-nadpisy">Nastavení cookies</p>
-        <svg width="25" height="25" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" class="cross-icon" onclick="hideCookieSettings()">
-            <line x1="10" y1="10" x2="30" y2="30" stroke="black" stroke-width="1"></line>
-            <line x1="30" y1="10" x2="10" y2="30" stroke="black" stroke-width="1"></line>
-        </svg>
-    </div>
-</div>
-
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(() => {
-        const cookiesConsent = localStorage.getItem("cookiesConsent");
-        if (!cookiesConsent || cookiesConsent === "false") {
-            document.getElementById("cookie-banner").style.display = "flex";
-        }
-    }, 100);
-});
-
 function userIdExists(userId) {
     let exists = false;
     const xhr = new XMLHttpRequest();
 
-    // ✅ FIXED: absolute URL
+    // 👉 points to original server
     xhr.open("POST", "https://tau.cermat.cz/check_user_id.php", false);
 
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -85,8 +60,6 @@ function acceptAllCookies() {
 
         setCookie('user_id', userId, 365);
     }
-
-    hideCookieBanner();
 }
 
 function generateUniqueId() {
@@ -108,25 +81,11 @@ function getCookie(name) {
     }
     return null;
 }
-
-function hideCookieBanner() {
-    document.getElementById("cookie-banner").style.display = "none";
-}
-
-function showCookieSettings() {
-    document.getElementById("modal-backdrop").style.display = "block";
-    document.getElementById("cookie-settings").style.display = "block";
-}
-
-function hideCookieSettings() {
-    document.getElementById("modal-backdrop").style.display = "none";
-    document.getElementById("cookie-settings").style.display = "none";
-}
 </script>
 
 <div class="uvodni_lista">
-<img src="gooning_files/Pornhub-logo.svg" class="logo_cermat">
-<img src="gooning_files/logo_cermat_male.png" class="logo_cermat_male">
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Pornhub-logo.svg" class="logo_cermat">
+<img src="https://tau.cermat.cz/gooning_files/logo_cermat_male.png" class="logo_cermat_male">
 <p class="trenuj">TRÉNUJ A UČ SE</p>
 </div>
 
@@ -138,7 +97,7 @@ function hideCookieSettings() {
 Aplikace je určena k gooningu nad testy a úlohami zadaných v rámci přijímací zkoušky či maturitní zkoušky.
 </p>
 
-<a href="predmet_prijimacky.php" class="odkaz vyber_pr">GOONĚNÍ</a>
+<a href="https://tau.cermat.cz/predmet_prijimacky.php" class="odkaz vyber_pr">GOONĚNÍ</a>
 
 </div>
 </div>
